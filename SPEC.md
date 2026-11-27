@@ -381,3 +381,6 @@ Deploy: upload the contents of `jager/` into `public_html/` of jager.social over
 - New identity: midnight, hot pink and acid yellow on cream, neo-brutalist stickers and hard shadows, giant uppercase Bricolage plus italic Instrument Serif. Replaces the bottle-green/amber look.
 - One long scroll that is a night: a fixed HUD clock (21:00 to 09:00) and moon/sun follow scroll progress. Five chapters (21:00 plug in, 23:30 night sprint, 02:00 posts erased, 03:30 comment sprint, 09:00 weekly reminder) drive one sticky phone plus a floating feed card. Then sprint cards, try-it sandbox, three-keys stack, MIT/terminal, FAQ, closer, Enki footer.
 - Pages: index.html and setup.html (+404). Old pages redirect to home via .htaccess. Source: build_night.py, night.css, night.js, chat.js.
+
+## v7
+- EN/FR (fr/ subfolder), 30-language selector (only EN/FR enabled), Product Hunt launch 1 Jan 2027 countdown, "What is Jager" explainer, comparison table, setup checklist.
