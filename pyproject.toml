@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jager"
+version = "0.1.0"
+description = "Post drunk. Wake up clean. A free, open-source buddy for your public comments, in WhatsApp or Telegram."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Enki Ltd", email = "ask@jager.social" }]
+requires-python = ">=3.11"
+keywords = ["social-media", "zernio", "telegram", "whatsapp", "moderation", "cleanup", "openrouter"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Communications :: Chat",
+]
+dependencies = ["httpx>=0.27", "fastapi>=0.110", "uvicorn>=0.29"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5", "bandit>=1.7", "pip-audit>=2.7"]
+
+[project.scripts]
+jager = "jager.cli:main"
+
+[project.urls]
+Homepage = "https://jager.social"
+Source = "https://github.com/paulfxyz/jager"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/jager"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 130
+target-version = "py311"
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "S", "UP", "SIM", "C4"]
+ignore = ["S101", "S311", "E501"]   # asserts are fine in tests; random.choice is for jokes, not crypto
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S"]

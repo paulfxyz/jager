@@ -36,7 +36,7 @@
   /* Product Hunt countdown */
   const cds = $$('[data-cd]');
   if (cds.length) {
-    const target = Date.UTC(2027, 0, 1, 0, 0, 0);
+    const target = Date.UTC(2026, 11, 3, 8, 1, 0)   /* Product Hunt day starts 00:01 Pacific = 08:01 UTC */;
     const tick = () => { const d = Math.max(0, target - Date.now()); const v = [Math.floor(d / 864e5), Math.floor(d / 36e5) % 24, Math.floor(d / 6e4) % 60, Math.floor(d / 1e3) % 60];
       cds.forEach(c => $$('[data-u]', c).forEach((el, i) => el.textContent = String(v[i]).padStart(2, '0'))); };
     tick(); setInterval(tick, 1000);

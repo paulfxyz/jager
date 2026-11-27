@@ -1,0 +1,8 @@
+name: Translation
+description: Teach Jager a new language (or fix a joke that did not land)
+body:
+  - type: input
+    attributes: { label: Language }
+    validations: { required: true }
+  - type: markdown
+    attributes: { value: "Copy a column in src/jager/i18n.py, translate it, send a pull request. The tests tell you if you forgot a key." }

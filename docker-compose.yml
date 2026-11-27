@@ -1,0 +1,19 @@
+# docker compose up -d      start Jager
+# docker compose logs -f    watch him think
+services:
+  jager:
+    build: .
+    image: jager:local
+    container_name: jager
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      # Loopback only. Zernio must reach you through a tunnel or reverse proxy
+      # (Cloudflare Tunnel, Caddy, nginx...). See docs/INSTALL.md. Do not expose 8080 raw.
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - ./data:/data
+    read_only: true            # the container cannot write anywhere except /data and /tmp
+    tmpfs: [/tmp]
+    cap_drop: [ALL]            # no Linux superpowers
+    security_opt: ["no-new-privileges:true"]

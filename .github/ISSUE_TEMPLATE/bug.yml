@@ -1,0 +1,8 @@
+name: Bug report
+description: Something misbehaved (hopefully not at 2 AM)
+body:
+  - type: textarea
+    attributes: { label: What happened?, description: "Paste the output of `jager doctor` (it hides your keys) and what you expected." }
+    validations: { required: true }
+  - type: input
+    attributes: { label: Jager version, placeholder: "jager --version" }

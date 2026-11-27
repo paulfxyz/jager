@@ -350,3 +350,7 @@ html:not(.no-drunk) .drunk:not(.sober):hover{filter:blur(2.5px)}
 .where i{font-style:normal;font-weight:800;border:2.5px solid var(--ink);border-radius:99px;padding:.3em .9em;background:var(--acid)}
 @media (max-width:1000px){.rgrid{grid-template-columns:1fr}}
 .runit .serif{color:var(--ink)}.runit h2 .serif{color:var(--cream)}
+/* capability chips on platform cards */
+.cks{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px}
+.ck{font-family:var(--f-m);font-size:.6rem;text-transform:uppercase;border:2px solid var(--ink);border-radius:99px;padding:.15em .55em;background:#fff;color:var(--ink)}
+.ck.y{background:#d8ffb0}.ck.n{background:#ffd3e6}
