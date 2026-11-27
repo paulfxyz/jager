@@ -221,9 +221,9 @@ jager/
 
 ## 8. Deployment (website)
 
-- Any static host works. For SiteGround-style hosting where FTP is blocked from the build machine, upload a zip through the host's file manager or an installer script, then **flush the dynamic cache**; a stale cache serving old HTML with deleted CSS looks like a broken, unstyled page.
+- Any static host works. If your host blocks FTP from the build machine, upload a zip through the host's file manager, then **flush the host's page cache**; a stale cache serving old HTML with deleted CSS looks like a broken, unstyled page.
 - Verify the live site in a real browser (bot protection can block plain HTTP clients), check that the stylesheet loads, and delete any temporary installer or gist.
-- Rotate any FTP or hosting password that was shared in a chat.
+- Never paste hosting or FTP passwords into a chat; use your host's secret store or SSH keys.
 
 ## 9. Definition of done
 
