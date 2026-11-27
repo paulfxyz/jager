@@ -336,3 +336,17 @@ html:not(.no-drunk) .drunk:not(.sober):hover{filter:blur(2.5px)}
 .pnote{margin-top:26px;font-size:.78rem;opacity:.75;max-width:72ch}
 @media (max-width:1000px){.pgrid{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:700px){.pgrid{grid-template-columns:repeat(2,1fr);gap:12px}.pc{padding:14px}}
+/* run it */
+.runit{background:var(--pink);color:var(--ink)}
+.runit .eyebrow{color:var(--ink)}.runit .big{color:var(--ink)}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.rc{background:var(--cream);border:3px solid var(--ink);border-radius:24px;padding:24px;box-shadow:8px 8px 0 var(--ink);display:flex;flex-direction:column;gap:12px;min-width:0}
+.rc .no{align-self:flex-start;font-family:var(--f-m);font-size:.72rem;background:var(--ink);color:var(--acid);border-radius:6px;padding:.2em .6em}
+.rc h3{margin:0;font-size:1.6rem;letter-spacing:-.05em;text-transform:uppercase;line-height:1}
+.rc p{margin:0;font-weight:600}.rc .term{box-shadow:5px 5px 0 var(--acid);margin-top:auto}.rc .term pre{font-size:.78rem;padding:14px}
+.rc .btn{align-self:flex-start}
+.where{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:34px}
+.where span{font-size:.72rem;text-transform:uppercase}
+.where i{font-style:normal;font-weight:800;border:2.5px solid var(--ink);border-radius:99px;padding:.3em .9em;background:var(--acid)}
+@media (max-width:1000px){.rgrid{grid-template-columns:1fr}}
+.runit .serif{color:var(--ink)}.runit h2 .serif{color:var(--cream)}

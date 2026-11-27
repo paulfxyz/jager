@@ -30,6 +30,9 @@ $ cd jager &amp;&amp; cp .env.example .env
 $ docker compose up -d
 <span class="g">✓ Jager est réveillé. Dis bonjour sur Telegram.</span></pre></div><p style="font-size:.85rem;margin-top:10px">Exemple de config. Les noms suivent le dépôt sur <a href="https://github.com/paulfxyz" rel="noopener">GitHub</a>.</p></div></article>
 </div>
+<div class="note2" id="other"><h3>D'autres façons de le lancer</h3><p>Docker est le chemin facile. Tu peux aussi importer Jager comme bibliothèque Python dans ton app, ton bot ou ton cron, ou donner le prompt de construction Markdown à tes propres agents pour qu'ils bâtissent un Jager adapté à ta stack.</p><pre class="mono" style="margin:12px 0;font-size:.85rem">from jager import Jager
+jager = Jager.from_env()
+jager.sprint("comments")</pre><a class="btn" href="../jager-build-prompt.md" download>Télécharger le prompt de construction (.md)</a></div>
 <div class="note2"><h3>Combien ça coûte ?</h3><p>Jager est gratuit. Tu paies directement tes fournisseurs pour ce que tu utilises : Zernio pour les connexions et ton fournisseur d'IA pour les tokens. Vérifie les tarifs actuels de chacun avant de commencer.</p></div>
 <div class="note2" id="license"><h3>MIT, tout simplement</h3><p>Utilise-le, modifie-le, vends-le, héberge-le pour des amis. Garde la mention de copyright. Le logiciel est fourni tel quel, sans garantie.</p></div>
 <div class="note2" id="contribute"><h3>Ajoute un sprint, corrige un bug, traduis une blague</h3><p>Ouvre une issue ou une pull request sur GitHub. Les idées de sprints et les traductions (hébreu, arabe et 28 autres) sont particulièrement bienvenues.</p><a class="btn btn--lg" href="https://github.com/paulfxyz" rel="noopener"><img src="../assets/icons/github.svg" alt="" width="20" height="20"> Voir sur GitHub →</a></div>
