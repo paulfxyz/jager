@@ -72,7 +72,7 @@ idx=head("Jager — the free, open-source buddy for your public comments","Jager
 <p class="hint mono">↑ blurry? that's you at 2 AM. tap the text to focus.</p>
 <div class="cta-row"><a class="btn btn--lg" href="{GH}" rel="noopener">{GHI} View on GitHub →</a><a class="btn btn--ghost btn--lg" href="#night">Watch the night</a></div>
 <p class="micro mono">Tonight's mistake: <span id="rot" data-list="{ROT}">texting your ex</span></p></div>
-<div class="hero-phone"><svg class="badge" viewBox="0 0 130 130" aria-hidden="true"><circle cx="65" cy="65" r="63" fill="#e4ff3a" stroke="#0d0b1f" stroke-width="3"/><defs><path id="cp" d="M65,65 m-47,0 a47,47 0 1,1 94,0 a47,47 0 1,1 -94,0"/></defs><text><textPath href="#cp">OPEN SOURCE ✦ MIT LICENSE ✦ FREE FOREVER ✦</textPath></text><text x="65" y="74" text-anchor="middle" style="font-size:26px;letter-spacing:0">MIT</text></svg>
+<div class="hero-phone"><svg class="badge" viewBox="0 0 130 130" aria-hidden="true"><circle cx="65" cy="65" r="63" fill="#e4ff3a" stroke="#0d0b1f" stroke-width="3"/><defs><path id="cp" d="M65,65 m-47,0 a47,47 0 1,1 94,0 a47,47 0 1,1 -94,0"/></defs><text><textPath href="#cp" textLength="290" lengthAdjust="spacing">OPEN SOURCE ✦ MIT LICENSE ✦ FREE ✦</textPath></text><text x="65" y="74" text-anchor="middle" style="font-size:26px;letter-spacing:0">MIT</text></svg>
 <div class="phone">{chatbox('heroChat',auto=True,tabs=True)}</div></div></div></section>
 {tick}
 <section class="sec story-sec on-dark" id="night"><div class="wrap">
